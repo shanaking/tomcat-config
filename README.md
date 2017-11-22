@@ -5,7 +5,7 @@ external tomcat configuration
  - Alter configuration files in the tomcat/conf directory. Files provided in the java-buildpack will be overwritten by files provided in the repository.
  - Create tar file of tomcat directory 
     - `tar -cvf tomcat_config.tar tomcat`
- - Verify tomcat_config.tar file is located in repository directory at same level as index.yml
+ - Move tomcat_config.tar file to repository directory at same level as index.yml
 # Configure Index
  - In index.yml, update domain
  - Add entries for any additional repository versions
