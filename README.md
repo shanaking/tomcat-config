@@ -7,7 +7,7 @@ external tomcat configuration
     - `tar -cvf tomcat_config.tar tomcat`
  - Verify tomcat_config.tar file is located in repository directory at same level as index.yml
 # Configure Index
- - In index.yml, update <domain>
+ - In index.yml, update domain
  - Add entries for any additional repository versions
    - Repository version to be used can be set by:
      - java buildpack config/tomcat.yml
