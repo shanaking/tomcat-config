@@ -10,10 +10,10 @@ external tomcat configuration
  - In index.yml, update domain
  - Add entries for any additional repository versions
    - Repository version can be set in java buildpack config/tomcat.yml or on a per application basis by adding version information to the JBP_CONFIG_TOMCAT environment variable:
-     - external_configuration: { repository_root: "http://tomcat-repo.domain", version: "2.0.0" }
+     - external_configuration: { repository_root: "http://tomcat-config.domain", version: "2.0.0" }
 # Push repository application
  - `cf push -f /repository/manifest.yml`
 # Designate repository in application manifest
  - env:
-    JBP_CONFIG_TOMCAT: '{ tomcat: { external_configuration_enabled: true }, external_configuration: { repository_root: "http://tomcat-repo.domain"}}'
+    JBP_CONFIG_TOMCAT: '{ tomcat: { external_configuration_enabled: true }, external_configuration: { repository_root: "http://tomcat-config.domain"}}'
  
