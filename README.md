@@ -14,6 +14,6 @@ external tomcat configuration
 # Push repository application
  - `cf push -f /repository/manifest.yml`
 # Designate repository in application manifest
- - env:
+ - env:<br>
     JBP_CONFIG_TOMCAT: '{ tomcat: { external_configuration_enabled: true }, external_configuration: { repository_root: "http://tomcat-config.domain"}}'
  
