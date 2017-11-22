@@ -1,0 +1,5 @@
+---
+buildpack: staticfile_buildpack
+applications:
+- name: tomcat-repo
+  instances: 1
