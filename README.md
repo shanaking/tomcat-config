@@ -12,7 +12,7 @@ external tomcat configuration
    - Repository version to be used can be set by:
      - java buildpack config/tomcat.yml
      - application manifest in the JBP_CONFIG_TOMCAT environment variable
-       - external_configuration: { repository_root: "http://repository.apps.opsman.fallingup.rocks", version: "2.0.0" }
+       - external_configuration: { repository_root: "http://tomcat-repo.<domain>", version: "2.0.0" }
 # Push repository application
  - `cf push -f /repository/manifest.yml`
 # Designate repository in application manifest
